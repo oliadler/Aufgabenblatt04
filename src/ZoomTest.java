@@ -11,7 +11,7 @@ public class ZoomTest {
          */
         int [][] testbild1 = {{1,7,0}, {1,0,3},{0,2,1}};
         zoom.setArray(testbild1);
-        int[][] ergebnisarray1von4 = zoom.zoom(3);
+        int[][] ergebnisarray1von4 = zoom.zoom(2);
         System.out.println("Ergebnisarray für Testbild 1 mit Faktor 2: ");
         zoom.ergebnisAusgeben(ergebnisarray1von4);
 

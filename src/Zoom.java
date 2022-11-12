@@ -36,7 +36,7 @@ public class Zoom {
         int rowcounter = 0;
         int columnCounter = 0;
         int rowcounter1 = 1;
-        int rowcounter2 = 2;
+        int columnCounter1 = 0;
 
         // ergebnisarray mit der Länge vom array * f.
         int [][] ergebnisarray = new int[array.length*f][array[0].length*f];
@@ -53,27 +53,38 @@ public class Zoom {
 
             // Bild vergroeßern.
             for (int i = 0; i < array.length ; i++) {
-                for (int j = 0; j < array[0].length; j++) {
+                for (int z = 0; z < f; z++) {
 
-                    for (int k = 0; k < f; k++) {
+                    for (int j = 0; j < array[0].length; j++) {
 
 
-                        ergebnisarray[rowcounter][columnCounter] = array[i][j];
-                        ergebnisarray[rowcounter1][columnCounter] = array[i][j];
-                        columnCounter++;
+                        for (int k = 0; k < f; k++) {
+
+
+                            ergebnisarray[rowcounter][columnCounter] = array[i][j];
+                            columnCounter++;
+                        }
+
                     }
+                    columnCounter = 0;
+                    rowcounter++;
 
                 }
-                rowcounter+=f;
-                rowcounter1+=f;
-                columnCounter = 0;
+
+
+
+
+
+                }
+
             }
+        return ergebnisarray;
 
         }
 
-        return ergebnisarray;
 
-    }
+
+
 
 
     // ergebnisarray ausgeben.
