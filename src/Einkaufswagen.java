@@ -28,17 +28,33 @@ public class Einkaufswagen {
     {
 
         Iterator itemsIterator = items.iterator();
+        boolean isempty = false;
 
         // Überprüft ob der Einkaufswagen nicht bereits leer ist.
         if (items.size() > 0)
         {
             // Es können nur Objekte herausgenommen werden, die im Einkaufswagen liegen.
-            if (itemsIterator.next() == item){
-                items.remove(item);
+
+            while (itemsIterator.hasNext())
+            {
+                if (itemsIterator.next() == item){
+
+                    isempty = true;
+                }
+
             }
+
+            if (!isempty)
+            {
+                System.out.println("Im Einkaufswagen gibt es nicht "+item);
+            }
+
             else {
-                System.out.println("Im Einkaufswagen gibt es nicht: "+item);
+                itemsIterator.remove();
             }
+
+
+
         }
         else
         {
@@ -62,8 +78,6 @@ public class Einkaufswagen {
             }
         }
         }
-
-
 
 
     // Gibt die Anzahl der Elemente im Einkaufswagen an.

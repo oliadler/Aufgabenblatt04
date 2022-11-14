@@ -9,6 +9,7 @@ public class EinkaufswagenTest {
 
         // Hinzufügen von Objekten.
         cart.addToCart("Birne");
+        cart.addToCart("PC");
         // Anzeigen des aktuellen Inhalts.
         cart.showContent();
         // Testversuch: Entfernen eines Objektes, ohne das es im Einkaufswagen liegt.

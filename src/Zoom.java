@@ -9,10 +9,24 @@ public class Zoom {
     //Setter für Array
     public void setArray(int[][] array) {
 
-        // Ueberpruefung, ob das Array auch innerhalb des Bereiches liegt.
+            // Ueberpruefung, ob das Array leer oder null ist.
+        if (array.length == 0 || array == null)
+        {
+            System.out.println("Das Array ist leer oder nicht initialisiert.");
+            System.exit(0);
+        }
+
+            // Ueberpruefung, ob es der NxN Größe entspricht.
+        if (array.length != array[0].length)
+        {
+            System.out.println("Das Array entspricht der Groeße NxN");
+            System.exit(0);
+        }
+
+        // Ueberpruefung, ob das Array auch innerhalb des Bereiches liegt. --> Kleiner 0
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                if (array[i][j] > 7)
+                if (array[i][j] > 7|| array[i][j] < 0)
                 {
                     isOutofArea = true;
                 }
@@ -35,8 +49,6 @@ public class Zoom {
     {
         int rowcounter = 0;
         int columnCounter = 0;
-        int rowcounter1 = 1;
-        int columnCounter1 = 0;
 
         // ergebnisarray mit der Länge vom array * f.
         int [][] ergebnisarray = new int[array.length*f][array[0].length*f];
@@ -71,19 +83,12 @@ public class Zoom {
 
                 }
 
-
-
-
-
                 }
 
             }
         return ergebnisarray;
 
         }
-
-
-
 
 
 

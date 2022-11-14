@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f332b0b-f252-4354-992a-ee4655c83c2e" name="Changes" comment="Init Commit">
+    <list default="true" id="5f332b0b-f252-4354-992a-ee4655c83c2e" name="Changes" comment="Bild vergrößern funktioniert mit 2 und 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Einkaufswagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Einkaufswagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EinkaufswagenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EinkaufswagenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MemoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ZoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ZoomTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668098154226</updated>
       <workItem from="1668098155621" duration="4286000" />
-      <workItem from="1668244425395" duration="12302000" />
+      <workItem from="1668244425395" duration="21815000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1668256300209</created>
@@ -55,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668256300209</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bild vergrößern funktioniert mit 2 und 3">
+      <created>1668258238031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668258238031</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,15 +86,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+    <MESSAGE value="Bild vergrößern funktioniert mit 2 und 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bild vergrößern funktioniert mit 2 und 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ZoomTest.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/MemoryTest.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Einkaufswagen.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
