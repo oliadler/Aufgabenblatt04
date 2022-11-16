@@ -9,6 +9,12 @@ public class Memory {
     public  int[][] generateField(int n)
     {
 
+        if (n <= 0)
+        {
+            System.out.println("Das n ist kleiner oder gleich 0");
+            System.exit(0);
+        }
+
         if (n % 2 != 0)
         {
             System.out.println("n muss gerade sein.");

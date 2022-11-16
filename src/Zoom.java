@@ -92,16 +92,6 @@ public class Zoom {
 
 
 
-    // ergebnisarray ausgeben.
-    public void ergebnisAusgeben(int[][] array)
-    {
-        for (int[] oneDimArray:array) {
-        for (int element: oneDimArray) {
-            System.out.print(element);
-        }
-            System.out.println();
-        }
 
-    }
 
 }

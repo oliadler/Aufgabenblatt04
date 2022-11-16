@@ -16,7 +16,7 @@ public class ZoomTest {
         zoom.setArray(testbild1);
         int[][] ergebnisarray1von4 = zoom.zoom(2);
         System.out.println("Ergebnisarray für Testbild 1 mit Faktor 2: ");
-        zoom.ergebnisAusgeben(ergebnisarray1von4);
+        ergebnisAusgeben(ergebnisarray1von4);
 
 
         /*
@@ -25,7 +25,7 @@ public class ZoomTest {
         zoom1.setArray(testbild1);
         int[][]ergebnisarray2von4 = zoom1.zoom(3);
         System.out.println("Ergebnisarray für Testbild 1 mit Faktor 3: ");
-        zoom.ergebnisAusgeben(ergebnisarray2von4);
+        ergebnisAusgeben(ergebnisarray2von4);
 
 
         /*
@@ -35,7 +35,7 @@ public class ZoomTest {
         zoom2.setArray(testbild2);
         int[][]ergebnisarray3von4 = zoom2.zoom(2);
         System.out.println("Ergebnisarray für Testbild 2 mit Faktor 2: ");
-        zoom.ergebnisAusgeben(ergebnisarray3von4);
+        ergebnisAusgeben(ergebnisarray3von4);
 
         /*
         Testbild 2 mit Faktor f = 3
@@ -43,8 +43,21 @@ public class ZoomTest {
         zoom3.setArray(testbild2);
         int[][]ergebnisarray4von4 = zoom3.zoom(3);
         System.out.println("Ergebnisarray für Testbild 2 mit Faktor 3: ");
-        zoom.ergebnisAusgeben(ergebnisarray4von4);
+        ergebnisAusgeben(ergebnisarray4von4);
 
+
+    }
+
+
+    // ergebnisarray ausgeben.
+    public static void  ergebnisAusgeben(int[][] array)
+    {
+        for (int[] oneDimArray:array) {
+            for (int element: oneDimArray) {
+                System.out.print(element);
+            }
+            System.out.println();
+        }
 
     }
 }
